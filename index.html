@@ -3,10 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1>rock paper scissor game</h1>
-    <p>See the game in .js file</p>
+    <!-- 1. Adding the login name -->
+    <h1>Welcome to the arena, <span id="player-name">Asif</span>!</h1>
+    
+    <!-- 3. Create three buttons -->
+    <div id="controls">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+
+    <!-- 5 & 6. Add a div for displaying results and the running score -->
+    <div id="results">
+        <p id="round-announcement">Make your choice to start!</p>
+        <p>Score - <b>asif:</b> <span id="player-score">0</span> | <b>Computer:</b> <span id="computer-score">0</span></p>
+        <h2 id="game-winner"></h2>
+    </div>
+
+    <script src="rps.js"></script>
 </body>
 </html>
